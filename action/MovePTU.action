@@ -1,0 +1,19 @@
+# The `MovePTU` sets the pan and tilt angle in radiant of the ptu. 
+# After the movement is finished it send a succeed result
+float32 pan # pan angle in radiant
+float32 tilt # tilt angle in radiant
+---
+int32 FAILED_TARGET_UNREACHABLE = 0
+int32 SUCCEEDED = 2
+
+int32 result
+---
+
+int32 IDLE= 0
+int32 MOVING_PTU = 1
+int32 FINISHED= 2
+
+float32 STEPS= 3
+
+float32 progress
+string feedback
